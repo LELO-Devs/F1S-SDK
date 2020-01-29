@@ -261,17 +261,17 @@ This characteristic can both be read from as well as set up to notify the app of
 |:----:| ---------- |:-----------:| ----------- |
 | 0x0A0A | Read, Notify | 8 bytes | Reads the pressure and temperature inside the devices chamber. |
 
-You may either trigger a read from this characteristic or enable notifications for it. Either way, you'll receive 8 bytes of data, which should be interpreted as two 32 bit unsigned integers: 0x `yyyy` `zzzz`, with `yyyy` representing the temperature and `zzzz` representing the pressure.
+You may either trigger a read from this characteristic or enable notifications for it. Either way, you'll receive 8 bytes of data, which should be interpreted as two 32 bit unsigned integers: 0x `yyy` `FF` `zzzz`, with `yyyy` representing the temperature, `zzzz` representing the pressure and both are separated by a single byte with value 0xFF.
 
 **Pressure**
 
-The pressure is a hexadecimal representation of a fixed floating point value, expressed in millibars (mbar), meaning the value should be converted into a floating point number and divided by 10:
+The pressure is a fixed floating point number, expressed in millibars (mbar), meaning the value should be converted into a floating point number and divided by 100:
 
 0x00018AE0 => 101088 => 1010.88mbar
 
 **Temperature**
 
-Likewise, the temperature is delivered as hexadecimal representation of a fixed floating point value, expressed in degrees Celsius (℃), meaning the value should be converted into a floating point number and divided by 10:
+Likewise, the temperature is delivered as a fixed floating point value, expressed in degrees Celsius (℃), meaning the value should be converted into a floating point number and divided by 100:
 
 0x00000A86 => 2694 => 26.94℃
 

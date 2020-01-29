@@ -22,7 +22,6 @@
 		51B3EF0B23DACF04008EBC41 /* F1sScannedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B3EF0A23DACF04008EBC41 /* F1sScannedItem.swift */; };
 		51B3EF0D23DAD4CE008EBC41 /* F1sMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B3EF0C23DAD4CE008EBC41 /* F1sMonitor.swift */; };
 		51BD3A4023DCF795000FD924 /* F1sBluetoothError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BD3A3F23DCF795000FD924 /* F1sBluetoothError.swift */; };
-		51BD3A4223DD0027000FD924 /* F1sBluetoothDevice-bak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BD3A4123DD0027000FD924 /* F1sBluetoothDevice-bak.swift */; };
 		51FA351523DCC65800E57C69 /* DevicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA351423DCC65800E57C69 /* DevicesListViewController.swift */; };
 		51FA351723DCC8A500E57C69 /* ConfirmConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA351623DCC8A500E57C69 /* ConfirmConnectionViewController.swift */; };
 		51FA351923DCCDA800E57C69 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FA351823DCCDA800E57C69 /* DeviceViewController.swift */; };
@@ -47,7 +46,6 @@
 		51B3EF0A23DACF04008EBC41 /* F1sScannedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1sScannedItem.swift; sourceTree = "<group>"; };
 		51B3EF0C23DAD4CE008EBC41 /* F1sMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1sMonitor.swift; sourceTree = "<group>"; };
 		51BD3A3F23DCF795000FD924 /* F1sBluetoothError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = F1sBluetoothError.swift; sourceTree = "<group>"; };
-		51BD3A4123DD0027000FD924 /* F1sBluetoothDevice-bak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "F1sBluetoothDevice-bak.swift"; sourceTree = "<group>"; };
 		51FA351423DCC65800E57C69 /* DevicesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListViewController.swift; sourceTree = "<group>"; };
 		51FA351623DCC8A500E57C69 /* ConfirmConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmConnectionViewController.swift; sourceTree = "<group>"; };
 		51FA351823DCCDA800E57C69 /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				51B3EF0123DAC6DE008EBC41 /* Data+Transformations.swift */,
-				51BD3A4123DD0027000FD924 /* F1sBluetoothDevice-bak.swift */,
 				51B3EF0523DAC810008EBC41 /* F1sBluetoothDevice.swift */,
 				5161A8AE23E1AD9300BB0E7F /* F1sBluetoothDevice+Operations.swift */,
 				51BD3A3F23DCF795000FD924 /* F1sBluetoothError.swift */,
@@ -236,7 +233,6 @@
 				51B3EF0423DAC7BC008EBC41 /* F1sBluetoothManager.swift in Sources */,
 				51B3EF0023DAC6A9008EBC41 /* F1sBluetoothState.swift in Sources */,
 				51B3EF0623DAC810008EBC41 /* F1sBluetoothDevice.swift in Sources */,
-				51BD3A4223DD0027000FD924 /* F1sBluetoothDevice-bak.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

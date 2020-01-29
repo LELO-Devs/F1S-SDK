@@ -87,8 +87,4 @@ final class F1sMonitor {
 			}
 		}
 	}
-
-	deinit {
-		NotificationCenter.default.removeObserver(self)
-	}
 }

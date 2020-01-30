@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speed"/>
+
+    <SeekBar
+        android:id="@+id/dialogSeekBarMotorSpeed"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:max="20"
+        android:min="0"
+        android:layout_marginTop="10dp"
+        android:progress="0"/>
+    <SeekBar
+        android:id="@+id/dialogSeekBarVibratorSpeed"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:max="20"
+        android:min="0"
+        android:layout_marginTop="10dp"
+        android:progress="0"/>
+
+    <Button
+        android:id="@+id/dialogButtonMotorStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="MOTOR STOP"/>
+
+    <Button
+        android:id="@+id/dialogButtonDeviceTurnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TURN OFF DEVICE"/>
+
+    <Button
+        android:id="@+id/dialogButtonVerifyAccelerometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VERIFY ACCELEROMETER"/>
+
+    <Button
+        android:id="@+id/dialogButtonClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="CLOSE"/>
+
+</LinearLayout>

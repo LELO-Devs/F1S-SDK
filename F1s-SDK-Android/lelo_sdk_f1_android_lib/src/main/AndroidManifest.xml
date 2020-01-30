@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lelo.sdk.lelo_sdk_f1_android_lib"
+    >
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+        <service android:name="com.lelo.sdk.lelo_sdk_f1_android_lib.BluetoothLeServiceLeloF1" />
+    </application>
+</manifest>

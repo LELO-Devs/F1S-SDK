@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/checkBluetooth"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/check_off" />
+
+                <TextView
+                    android:id="@+id/titleBluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/checkBluetooth"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/checkBluetooth"
+                    android:text="BLUETOOTH"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/valueBluetooth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/titleBluetooth"
+                    android:layout_alignRight="@+id/titleBluetooth"
+                    android:layout_below="@+id/titleBluetooth"
+                    android:layout_margin="5dp"
+                    android:text="for bluetooth connection with device" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/checkLocation"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/check_off" />
+
+                <TextView
+                    android:id="@+id/titleLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/checkLocation"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/checkLocation"
+                    android:text="LOCATION"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/valueLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/titleLocation"
+                    android:layout_alignRight="@+id/titleLocation"
+                    android:layout_below="@+id/titleLocation"
+                    android:layout_margin="5dp"
+                    android:text="for bluetooth connection with device" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/checkLocationCourse"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/check_off" />
+
+                <TextView
+                    android:id="@+id/titleLocationCourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/checkLocationCourse"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/checkLocationCourse"
+                    android:text="LOCATION COURSE"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/valueBarcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/titleLocationCourse"
+                    android:layout_alignRight="@+id/titleLocationCourse"
+                    android:layout_below="@+id/titleLocationCourse"
+                    android:layout_margin="5dp"
+                    android:text="permission M, for BLE connection" />
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/buttonNextStep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="30dp"
+                android:text="RE-CHECK PERMISSIONS"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -14,15 +14,15 @@
 
 The [LELO F1s SDK](https://www.lelo.com/f1s-developers-kit-red) enables you to write your own code and experiment with your F1s device, either for your own indulgence or to release as an app for others to enjoy.
 
-Using the SDK you can control individual aspects of the F1s device and read from it's various sensors, enabling you to create your very own take on the F1s experience.
+Using the SDK you can control individual aspects of the F1s device and read from its various sensors, enabling you to create your very own take on the F1s experience.
 
 ## In a hurry to get started?
 
-Make sure to charge your F1s device before use, especially before first use, when you should leave it to charge for at least 2 hours. Before running the app you might want to turn off your F1s; to do so, long press the power button until the lights on the F1s device turn off.
+Make sure to charge your F1s device before use. We recommend you charge your F1s device for at least 2 hour charge before first use. Turn off your F1s: long press the power button until the lights on the F1s device turn off.
 
-Decide whether you'd like to try out the iOS or Android SDK (depending on the phone you have), open the project from the appropriate directory (iOS or Android, respectively), using the appropriate IDE environment (Xcode for iOS, Android Studio for Android). Build and run the project, after which you should see a message to turn on your F1s device.
+Decide whether you'd like to try out the iOS or Android SDK, open the project from the appropriate directory (iOS or Android, respectively), using the appropriate IDE environment (Xcode for iOS, Android Studio for Android). Build and run the project, after which you should turn on your F1s device and select it in the app.
 
-Press the power button on the F1s device, which will turn the device on. After a connection with the app has been established, the device will require a connection confirmation (you wouldn't want to allow just anyone to connect to your F1s device, now would you?): press the power button on the F1s device again.
+Press the power button on the F1s to turn on the device. After a connection with the app has been established, the device will require a connection confirmation (you wouldn't want to allow just anyone to connect to your F1s device, now would you?): press the power button on the F1s device again.
 
 At this point your device should be connected to the app, the app should have detected the confirmation, and now you can control the various aspects of the device through the (admittedly spartan) apps interface.
 

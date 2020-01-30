@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/touch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch1 - 0%"/>
+
+    <SeekBar
+        android:id="@+id/dialogSeekBarTouch1"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:max="20"
+        android:min="0"
+        android:layout_marginTop="10dp"
+        android:progress="0"/>
+
+    <TextView
+        android:id="@+id/touch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch2 - 0%"
+        android:layout_marginTop="20dp"/>
+
+    <SeekBar
+        android:id="@+id/dialogSeekBarTouch2"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:max="20"
+        android:min="0"
+        android:layout_marginTop="10dp"
+        android:progress="0"/>
+
+    <TextView
+        android:id="@+id/touch3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch3 - 0%"
+        android:layout_marginTop="20dp"/>
+
+    <SeekBar
+        android:id="@+id/dialogSeekBarTouch3"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:max="20"
+        android:min="0"
+        android:layout_marginTop="10dp"
+        android:progress="0"/>
+
+    <TextView
+        android:id="@+id/touch4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch4 - 0%"
+        android:layout_marginTop="20dp"/>
+
+    <SeekBar
+        android:id="@+id/dialogSeekBarTouch4"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:max="20"
+        android:min="0"
+        android:layout_marginTop="10dp"
+        android:progress="0"/>
+
+    <TextView
+        android:id="@+id/touch5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch5 - 0%"
+        android:layout_marginTop="20dp"/>
+
+    <SeekBar
+        android:id="@+id/dialogSeekBarTouch5"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:max="20"
+        android:min="0"
+        android:layout_marginTop="10dp"
+        android:progress="0"/>
+
+    <TextView
+        android:id="@+id/touch6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch6 - 0%"
+        android:layout_marginTop="20dp"/>
+
+    <SeekBar
+        android:id="@+id/dialogSeekBarTouch6"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:max="20"
+        android:min="0"
+        android:layout_marginTop="10dp"
+        android:progress="0"/>
+
+    <TextView
+        android:id="@+id/touch7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch7 - 0%"
+        android:layout_marginTop="20dp"/>
+
+    <SeekBar
+        android:id="@+id/dialogSeekBarTouch7"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:max="20"
+        android:min="0"
+        android:layout_marginTop="10dp"
+        android:progress="0"/>
+
+    <TextView
+        android:id="@+id/touch8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch8 - 0%"
+        android:layout_marginTop="20dp"/>
+
+    <SeekBar
+        android:id="@+id/dialogSeekBarTouch8"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:max="20"
+        android:min="0"
+        android:layout_marginTop="10dp"
+        android:progress="0"/>
+
+    <Button
+        android:id="@+id/dialogButtonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="SAVE"/>
+
+</LinearLayout>

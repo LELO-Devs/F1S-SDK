@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Clear usage log"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/dialogButtonClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"
+            android:layout_weight="0.5"
+            />
+        <Button
+            android:id="@+id/dialogButtonCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:layout_weight="0.5"
+            />
+    </LinearLayout>
+</LinearLayout>

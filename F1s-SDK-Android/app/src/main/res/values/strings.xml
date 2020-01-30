@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">F1s SDK</string>
+
+    <string name="ble_not_supported">Bluetooth LE is not supported on this device.</string>
+    <string name="msg_to_user_selected_bluettoth_off">This app needs Bluetooth to be turned on.</string>
+
+    <!-- permissions -->
+    <string name="permissions_location_title">Permission required.</string>
+    <string name="permissions_location_message">Access to your location is required to connect your device with Luna.</string>
+    <string name="permissions_location_positive">Allow</string>
+    <string name="permissions_location_negative">Cancel</string>
+</resources>

@@ -9,6 +9,7 @@
 - [F1s BLE Reference](#f1s-ble-reference)
 - [Licence](#licence)
     - [TL;DR](#tldr)
+- [Other languages]
 
 ## What is this?
 
@@ -58,3 +59,18 @@ The code samples (and associated libraries) you may use as you like, as long as 
 
 * [Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)](https://tldrlegal.com/license/creative-commons-attribution-noderivatives-4.0-international-(cc-by-nd-4.0))
 * [Apache License 2.0 (Apache-2.0)](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0))
+
+## Other languages
+
+As we'd hoped, the community is willing to put time and effort behind this, and we've noticed a few projects popping up, among other, implementations of our BLE specs in other languages, allowing for implementation on other platforms than we envisioned when embarking on open sourcing our specs.
+
+Have a look at the following, if you're interested.  
+Please note that we're not directly associated to these projects, and do not take any responsibility for the code you'll find there or any damage that might occur to your device as a result of using them, nor do we offer support on the use of these projects.
+
+### Javascript
+
+* [LELO F1 SDK Web Bluetooth Client](https://github.com/fabiofenoglio/lelo-f1-web-sdk)
+
+### Python
+
+* [LELO F1 SDK Python client](https://github.com/fabiofenoglio/lelo-f1-python-sdk)

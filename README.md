@@ -9,7 +9,7 @@
 - [F1s BLE Reference](#f1s-ble-reference)
 - [Licence](#licence)
     - [TL;DR](#tldr)
-- [Other languages]
+- [Other languages](#other-languages)
 
 ## What is this?
 

@@ -146,7 +146,7 @@ extension F1sBluetoothManager: CBCentralManagerDelegate {
 	}
 
 	func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-		guard !connected, let name = peripheral.name, name == "F1s" else {
+		guard !connected, let name = peripheral.name, ["F1s", "F1SV2A", "F1SV2X"].contains(name) else {
 			return
 		}
 		let uuid = peripheral.identifier.uuidString

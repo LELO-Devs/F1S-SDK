@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wjy-cN-hdW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wjy-cN-hdW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--F1s devices-->
+        <!--F1S devices-->
         <scene sceneID="WfE-la-k4M">
             <objects>
-                <tableViewController id="lGh-xS-bc8" customClass="DevicesListViewController" customModule="F1s_SDK_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="lGh-xS-bc8" customClass="DevicesListViewController" customModule="F1S_SDK_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pIh-yD-TIx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,7 +33,7 @@
                             <outlet property="delegate" destination="lGh-xS-bc8" id="kqw-jb-yH7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="F1s devices" id="o75-bW-hGf"/>
+                    <navigationItem key="navigationItem" title="F1S devices" id="o75-bW-hGf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VcH-Jr-GaT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,13 +42,13 @@
         <!--Confirm connection-->
         <scene sceneID="VhT-v1-eyR">
             <objects>
-                <viewController id="RJ6-3p-uvE" customClass="ConfirmConnectionViewController" customModule="F1s_SDK_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RJ6-3p-uvE" customClass="ConfirmConnectionViewController" customModule="F1S_SDK_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZNv-ps-0y0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting to your F1s." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrV-pS-yfq">
-                                <rect key="frame" x="111.5" y="280" width="191" height="21.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting to your F1S." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JrV-pS-yfq">
+                                <rect key="frame" x="110.5" y="280" width="193" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="1187" y="-84"/>
         </scene>
-        <!--F1s device-->
+        <!--F1S device-->
         <scene sceneID="NnD-j9-kJz">
             <objects>
-                <tableViewController id="5Vx-3H-uv2" customClass="DeviceViewController" customModule="F1s_SDK_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="5Vx-3H-uv2" customClass="DeviceViewController" customModule="F1S_SDK_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BeZ-Xz-7Zv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -438,7 +438,7 @@
                             <outlet property="delegate" destination="5Vx-3H-uv2" id="6xw-ao-wE3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="F1s device" id="lSj-CQ-e1X">
+                    <navigationItem key="navigationItem" title="F1S device" id="lSj-CQ-e1X">
                         <barButtonItem key="leftBarButtonItem" title="Disconnect" id="qKb-Nr-p7p">
                             <connections>
                                 <segue destination="BXa-3m-8Nj" kind="unwind" identifier="unwindToDevicesList" unwindAction="unwindToList:" id="R46-6a-mNG"/>

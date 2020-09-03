@@ -1,6 +1,6 @@
 //
 //  ConfirmConnectionViewController.swift
-//  F1s-SDK-iOS
+//  F1S-SDK-iOS
 //
 //  Created by Goran Blažič on 24/01/2020.
 //  Copyright © 2020 LELO. All rights reserved.
@@ -29,11 +29,11 @@ fileprivate enum ConnectionState {
 	var description: String {
 		switch self {
 		case .connecting:
-			return "Connecting to your F1s."
+			return "Connecting to your F1S."
 		case .confirming:
-			return "Please confirm the connection by pressing the button on your F1s."
+			return "Please confirm the connection by pressing the button on your F1S."
 		case .connected:
-			return "Connection to your F1s is confirmed."
+			return "Connection to your F1S is confirmed."
 		default:
 			return "Unknown state"
 		}
@@ -78,11 +78,11 @@ class ConfirmConnectionViewController: UIViewController, F1sInjectable {
 			guard let self = self else {
 				return
 			}
-			var message = "There was an error connecting to the selected F1s device."
+			var message = "There was an error connecting to the selected F1S device."
 			if let error = error {
 				message += "\n\(error.localizedDescription)"
 			}
-			let alert = UIAlertController(title: "Error Connecting to F1s", message: message, preferredStyle: .alert)
+			let alert = UIAlertController(title: "Error Connecting to F1S", message: message, preferredStyle: .alert)
 			alert.addAction(UIAlertAction(title: "Ok", style: .default) { action in
 				self.performSegue(withIdentifier: "unwindToDevicesList", sender: self)
 			})

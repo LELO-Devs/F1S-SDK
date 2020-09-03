@@ -1,6 +1,6 @@
 //
 //  F1sConnectionState.swift
-//  F1s-SDK-iOS
+//  F1S-SDK-iOS
 //
 //  Created by Goran Blažič on 24/01/2020.
 //  Copyright © 2020 LELO. All rights reserved.

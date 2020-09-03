@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  F1s-SDK-iOS
+//  F1S-SDK-iOS
 //
 //  Created by Goran Blažič on 24/01/2020.
 //  Copyright © 2020 LELO. All rights reserved.
@@ -43,24 +43,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		}
 
 		monitor?.onF1sItemFound = { item, last in
-			print("Found f1s item: \(item)\(last ? " - was last connected to this device" : "")")
+			print("Found F1S item: \(item)\(last ? " - was last connected to this device" : "")")
 			return false
 		}
 
 		monitor?.onF1sItemRemoved = { item in
-			print("Removed f1s item: \(item)")
+			print("Removed F1S item: \(item)")
 		}
 
 		monitor?.onAllF1sRemoved = {
-			print("All f1s devices were removed")
+			print("All F1S devices were removed")
 		}
 
 		monitor?.onF1sConnected = { item in
-			print("Connected to f1s device: \(item)")
+			print("Connected to F1S device: \(item)")
 		}
 
 		monitor?.onF1sDisconnected = { item in
-			print("Disconnected from f1s device: \(item)")
+			print("Disconnected from F1S device: \(item)")
 		}
 
 		monitor?.onF1sConnectFailed = { item, error in

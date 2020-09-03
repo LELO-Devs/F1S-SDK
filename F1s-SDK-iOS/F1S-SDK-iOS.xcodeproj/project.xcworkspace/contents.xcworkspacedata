@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:F1s-SDK-iOS.xcodeproj">
+      location = "self:/Users/goranb/Projects/Mobile App/Lelo/F1S-SDK/F1s-SDK-iOS/F1S-SDK-iOS.xcodeproj">
    </FileRef>
 </Workspace>

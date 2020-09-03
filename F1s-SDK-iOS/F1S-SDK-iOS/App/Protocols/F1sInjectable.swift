@@ -1,6 +1,6 @@
 //
-//  F1sBluetoothError.swift
-//  F1s-SDK-iOS
+//  F1sInjectable.swift
+//  F1S-SDK-iOS
 //
 //  Created by Goran Blažič on 24/01/2020.
 //  Copyright © 2020 LELO. All rights reserved.
@@ -18,9 +18,19 @@
 //  limitations under the License.
 //
 
-import Foundation
+import UIKit
 
-enum F1sBluetoothError: Error {
-	case generic(Error)
-	case invalidValuePassed
+protocol F1sInjectable: class {
+	var f1sDevice: F1sBluetoothDevice? { get set }
+}
+
+extension F1sInjectable where Self: UIViewController {
+
+	@discardableResult func injectF1sItem(into viewController: UIViewController) -> Bool {
+		guard let f1sDevice = f1sDevice, let injectable = viewController as? F1sInjectable else {
+			return false
+		}
+		injectable.f1sDevice = f1sDevice
+		return true
+	}
 }

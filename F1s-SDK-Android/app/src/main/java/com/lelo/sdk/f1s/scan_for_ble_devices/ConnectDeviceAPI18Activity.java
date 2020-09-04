@@ -32,6 +32,8 @@ public class ConnectDeviceAPI18Activity extends AppCompatActivity implements Blu
 
         List<String> findDeviceList=new ArrayList<>();
         findDeviceList.add(LeloF1Constants.NAME_ADVERTISING);
+        findDeviceList.add(LeloF1Constants.NAME_ADVERTISING_V2A);
+        findDeviceList.add(LeloF1Constants.NAME_ADVERTISING_V2X);
         mBluetoothScanner.setUp(this,findDeviceList);
         mBluetoothScanner.setListener(this);
     }

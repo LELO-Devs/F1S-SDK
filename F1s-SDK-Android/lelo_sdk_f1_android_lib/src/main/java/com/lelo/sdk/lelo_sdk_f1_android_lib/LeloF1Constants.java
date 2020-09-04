@@ -3,6 +3,8 @@ package com.lelo.sdk.lelo_sdk_f1_android_lib;
 public class LeloF1Constants {
 
     public static final String NAME_ADVERTISING = "F1s";
+    public static final String NAME_ADVERTISING_V2A = "F1SV2A";
+    public static final String NAME_ADVERTISING_V2X = "F1SV2X";
     public static final String DEVICE_NAME_CHARACTERISTIC = "00002a00-0000-1000-8000-00805f9b34fb"; //WRITE,READ
     public static final String MOTOR_CHARACTERISTIC = "0000fff1-0000-1000-8000-00805f9b34fb"; //WRITE,READ
     public static final String BATTERY_PERCENTAGE_CHARACTERISTIC = "00002a19-0000-1000-8000-00805f9b34fb";//NOTIFY

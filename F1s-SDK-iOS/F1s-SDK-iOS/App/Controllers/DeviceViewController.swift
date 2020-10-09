@@ -41,6 +41,8 @@ class DeviceViewController: UITableViewController, F1sInjectable {
 	@IBOutlet var buttonsCell: UITableViewCell!
 	@IBOutlet var useCountCell: UITableViewCell!
 
+	static var counter = 0
+
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 
@@ -112,6 +114,17 @@ class DeviceViewController: UITableViewController, F1sInjectable {
 
 		f1sDevice.onUseLogUpdated = {
 			self.useCountCell.textLabel?.text = String($0)
+		}
+
+		DeviceViewController.counter = 0
+		_ = Timer.scheduledTimer(withTimeInterval: 6.0, repeats: true) { [weak self] timer in
+			guard let self = self else {
+				timer.invalidate()
+				return
+			}
+			print("Timer fired - \(String(format: "%0.1f", Double(DeviceViewController.counter)/10))")
+			DeviceViewController.counter += 1
+			f1sDevice.setMotorSpeed(main: UInt8(DeviceViewController.counter), vibration: 1)
 		}
 	}
 

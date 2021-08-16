@@ -297,7 +297,7 @@ The value this characteristic gives you represents the thrust depth of whats ins
 
 | UUID | Operations | Data Length | Description |
 |:----:| ---------- |:-----------:| ----------- |
-| 0x0A0C | Read, Notify | 6 bytes | Represents the 3 axis accelerometer and/or the orientation of your F1S device. |
+| 0x0A0C | Read, Notify | 8 bytes | Represents the 3 axis accelerometer and/or the orientation of your F1S device. |
 
 This characteristic can both be read from as well as set up to notify the app of changes. The data delivered will consist of 6 bytes, with individual byte pairs (16 bit) representing the readout for a single axis: 0x `xxxx` `yyyy` `zzzz`.
 

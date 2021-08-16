@@ -158,13 +158,21 @@ When writing to this characteristic, you can trigger multiple functions:
 | Value | Meaning | Note |
 |:-----:| ------- | ---- |
 | 0x0400 | Turn off device | |
-| 0x0405XXYY[T1][T2][Pmax][Pmin] | Control your F1S device in the advanced way| 
+| 0x0405XXYY[T1][T2][Pmax][Pmin] | Control your F1S device in the advanced way||
+
 [XX](1 byte):01 indicates Main motor, 02 indicates vibrator motor,
 [YY](1 byte):02~08 indicates the motor vibrates on which pattern.
 [T1](2 byte):the duration time of period 1.
 [T2](2 byte):the duration time of period 2.
 [Pmax](1 byte): the motor speed of period 1.
-[Pmin](1 byte): the motor speed of period 2.|
+[Pmin](1 byte): the motor speed of period 2.
+
+For Example: 
+04050108000000003200,  main motor works on pattern 8(continues) with 50% motor speed.
+040502030bb80bb8411e,  vibrator motor works on pattern 3, T1:3s, T2:3s, Pmax:65%, Pmin:30%
+
+![image](https://user-images.githubusercontent.com/87749976/129508623-1f73746c-9fbf-4257-aadb-6809b0e7c3a3.png)
+![image](https://user-images.githubusercontent.com/87749976/129508637-087ba0f7-0641-4acb-95c1-839e4933dee8.png)
 
 
 #### Read

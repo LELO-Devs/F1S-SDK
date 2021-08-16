@@ -159,15 +159,23 @@ When writing to this characteristic, you can trigger multiple functions:
 | 0x0405XXYY[T1][T2][Pmax][Pmin] | Control your F1S device in the advanced way||
 
 #### Paramemter Descriptions.
+
 [XX](1 byte):01 indicates Main motor, 02 indicates vibrator motor,
+
 [YY](1 byte):02~08 indicates the motor vibrating pattern. The motor vibration patterns are composed of the below parameters
-[T1](2 byte):the duration time of period 1.
-[T2](2 byte):the duration time of period 2.
+
+[T1](2 bytes):the duration time of period 1.
+
+[T2](2 bytes):the duration time of period 2.
+
 [Pmax](1 byte): the motor speed of period 1.
+
 [Pmin](1 byte): the motor speed of period 2.
 
 #### For Example: 
+
 04050108000000003200,  main motor works on pattern 8(continues) with 50% motor speed.
+
 040502030bb80bb8411e,  vibrator motor works on pattern 3, T1:3s, T2:3s, Pmax:65%, Pmin:30%
 
 #### 8 Motor Vibration Patterns are listing here
@@ -220,11 +228,11 @@ Write 8 bytes to this characteristic to set the vibration speed for each trigger
 
 ---
 
-### Key state
+### Security Access
 
 | UUID | Operations | Data Length | Description |
 |:----:| ---------- |:-----------:| ----------- |
-| 0x0A0F | Read, Notify | 1 byte | A security feature to protect your F1S device and yourself. To unlock the full functionality of your F1S device you need to confirm a connection by pressing the power button after a connection is established. This characteristic will reflect the state of the confirmation process. |
+| 0x0A10 | Read, Write, Notify | 8 bytes | A security feature to protect your F1S device and yourself. To unlock the full functionality of your F1S device you need to confirm a connection by pressing the power button after a connection is established. This characteristic will reflect the state of the confirmation process. |
 
 #### Read
 
@@ -232,8 +240,13 @@ The format of the data is the same when reading or receiving notifications from 
 
 | Value | Meaning |
 |:-----:| ------- |
-| 0x00 | Connection **not** confirmed, limited functionality. |
-| 0x01 | Connection confirmed, full functionality enabled. |
+| 0x0000000000000000 | Connection **not** confirmed, limited functionality. |
+| 0xXXXXXXXXXXXXXXXX | **Password** of the connecting F1S. |
+| 0x0100000000000000 | Connection confirmed, full functionality enabled. |
+
+#### Write
+
+When connecting F1S, write the **Password** reading from this characteristic after pressing the power button.
 
 ---
 

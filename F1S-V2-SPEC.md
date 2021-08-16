@@ -307,7 +307,7 @@ the last byte `ww` is consist of 8 bit with the meaning of each showing below.
 
 ![image](https://user-images.githubusercontent.com/87749976/129517755-dbff4007-7022-4448-afa4-3312c0bf1758.png)
 
-The High 4 bit represent the orientation are aviable only when the 1st `triggerFlag` is 1
+The High 4 bit represent the orientation are only aviable when the 1st `triggerFlag` is 1
 
 The Low 4 bit represent the direction, if 1 it means possitive,otherwise negative.
 

@@ -14,6 +14,7 @@
     - [LELO Custom Service](#lelo-custom-service)
 - [BLE Characteristics details](#ble-characteristics-details)
     - [Motor control](#motor-control)
+    - [Advanced Motor control](#advanced-motor-control)
     - [Cruise control](#cruise-control)
     - [Vibrator setting](#vibrator-setting)
     - [Security](#security)

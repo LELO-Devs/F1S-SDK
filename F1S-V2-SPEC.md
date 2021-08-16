@@ -176,7 +176,7 @@ When writing to this characteristic, you can trigger multiple functions:
 
 04050108000000003200,  main motor works on pattern 8(continues) with 50% motor speed.
 
-040502030bb80bb8411e,  vibrator motor works on pattern 3, T1:3s, T2:3s, Pmax:65%, Pmin:30%
+040502030bb80bb8411e,  vibrator motor works on pattern 3, T1(duration time with high speed):3s, T2(duration time with low speed):3s, Pmax(high speed):65%, Pmin(low speed):30%
 
 #### 8 Motor Vibration Patterns are listing here
 
@@ -297,9 +297,22 @@ The value this characteristic gives you represents the thrust depth of whats ins
 
 | UUID | Operations | Data Length | Description |
 |:----:| ---------- |:-----------:| ----------- |
-| 0x0A0C | Read, Notify | 8 bytes | Represents the 3 axis accelerometer and/or the orientation of your F1S device. |
+| 0x0A0C | Read, Notify | 7 bytes | Represents the 3 axis accelerometer and the orientation of your F1S device. |
 
-This characteristic can both be read from as well as set up to notify the app of changes. The data delivered will consist of 6 bytes, with individual byte pairs (16 bit) representing the readout for a single axis: 0x `xxxx` `yyyy` `zzzz`.
+Here is an data example readout from this characteristic. xxxxyyyyzzzzww
+
+This characteristic can both be read from as well as set up to notify the app of changes. The data delivered will consist of 7 bytes, with individual byte pairs (16 bit) representing the readout for a single axis: 0x `xxxx` `yyyy` `zzzz`. the last byte `ww` represents the direction and orientation.
+
+the last byte `ww` is consist of 8 bit with the meaning of each showing below.
+
+![image](https://user-images.githubusercontent.com/87749976/129517755-dbff4007-7022-4448-afa4-3312c0bf1758.png)
+
+The High 4 bit represent the orientation are aviable only when the 1st `triggerFlag` is 1
+
+The Low 4 bit represent the direction, if 1 it means possitive,otherwise negative.
+
+![image](https://user-images.githubusercontent.com/87749976/129518495-9457aa97-6078-4119-80dd-89c925ab8afd.png)
+
 
 ---
 
